@@ -17,8 +17,8 @@ function reduceToTotal(sourceArray, startingPoint = 0){
   return sourceArray.reduce(function(total, element){return total += element},startingPoint);
 }
 function reduceToAllTrue(sourceArray){
-  
+  return sourceArray.reduce(function(total, element){return total += element},startingPoint);
 }
 function reduceToAnyTrue(sourceArray){
-  
+  return sourceArray.reduce(function(total, element){return true}, 0);
 }
