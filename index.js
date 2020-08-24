@@ -24,7 +24,7 @@ function reduceToAllTrue(sourceArray){
       state = !!element;
     }
     return state;
-  }, true)
+  })
 }
     
     
