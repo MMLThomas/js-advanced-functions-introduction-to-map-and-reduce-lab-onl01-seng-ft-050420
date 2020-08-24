@@ -17,14 +17,19 @@ function reduceToTotal(sourceArray, startingPoint = 0){
   return sourceArray.reduce(function(total, element){return total += element},startingPoint);
 }
 function reduceToAllTrue(sourceArray){
-  return sourceArray.reduce(
-    function(total, element){
-      if(element === false){
-        total = false;
-        break
-      } else{total = true}
-    });
+  return sourceArray.reduce(function(state, element){
+    if (state === false){
+
+    }else{
+      state = element;
+    }
+    return state;
+  }, true)
 }
+    
+    
+    
+    
 function reduceToAnyTrue(sourceArray){
   return sourceArray.reduce(function(total, element){return total += element}, 0);
 }
