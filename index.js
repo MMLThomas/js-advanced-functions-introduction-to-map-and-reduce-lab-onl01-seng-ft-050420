@@ -31,10 +31,10 @@ function reduceToAllTrue(sourceArray){
     
 function reduceToAnyTrue(sourceArray){
   return sourceArray.reduce(function(state, element){
-    if (!state){
+    if (!!state){
       return true
     }else{
-      state = !!element;
+      state = !element;
     }
     return state;
   })
