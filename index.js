@@ -34,7 +34,7 @@ function reduceToAnyTrue(sourceArray){
     if (!!state){
       return true
     }else{
-      state = !element;
+      state = !!element;
     }
     return state;
   })
