@@ -9,7 +9,7 @@ function mapToDouble(sourceArray){
   return sourceArray.map(element => element * 2);
 }
 function mapToSquare(sourceArray){
-  return sourceArray.map(element => (element ** 2));
+  return sourceArray.map(element => element * element);
 }
 
 
