@@ -18,10 +18,10 @@ function reduceToTotal(sourceArray, startingPoint = 0){
 }
 function reduceToAllTrue(sourceArray){
   return sourceArray.reduce(function(state, element){
-    if (state === false){
-
+    if (!state){
+      return false
     }else{
-      state = element;
+      state = !!element;
     }
     return state;
   }, true)
