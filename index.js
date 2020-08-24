@@ -20,7 +20,8 @@ function reduceToAllTrue(sourceArray){
   return sourceArray.reduce(
     function(total, element){
       if(element === false){
-        return false break;
+        total = false;
+        break
       } else{total = true}
     });
 }
